@@ -5,6 +5,10 @@ app.use(Express.json());
 
 app.get('/', (req,res)=>{
     res.json("Hello World");
+});
+
+app.get('/homepage', (req,res)=>{
+    res.json("Homepage");
 })
 
 app.listen(3000, ()=>{
